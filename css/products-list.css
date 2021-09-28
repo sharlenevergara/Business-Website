@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 220, 220, 0.5);
+    height: 10vh;
+}
+
+.navbar .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.navbar .nav-links li {
+    list-style-type: none;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    font-family: 'Crimson Text', serif;
+    color: dimgrey;
+    font-size: 17px;
+}
+
+.navbar .nav-links a:hover {
+    font-weight: bold;
+}
+
+.navbar .nav-links .shopname {
+    font-family: 'Playfair Display', serif;
+    border-bottom: 1px solid black;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas: 
+    ". firstname ."
+    ". liveplants ."
+    ". secondname ."
+    ". flowers ."
+    ". note .";
+}
+
+.first_type {
+    grid-area: firstname;
+}
+
+.first_type h1, .second_type h1 {
+    font-family: 'Playfair Display', serif;
+    color: forestgreen;
+    margin-top: 70px;
+    margin-left: 20px;
+    font-size: 40px;
+    letter-spacing: 6px;
+}
+
+.grid-live, .grid-flowers {
+    grid-area: liveplants;
+    margin-top: 30px;
+}
+
+.grid-live .image, .grid-flowers .image {
+    padding: 0px 20px;
+}
+
+.grid-live .title, .grid-flowers .title {
+    padding: 0px 20px 50px 20px;
+    font-family: 'Crimson Text', serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.second_type {
+    grid-area: secondname;
+}
+
+.grid-flowers {
+    grid-area: flowers;
+}
+
+.note {
+    grid-area: note;
+    margin-left: 20px;
+}
+
+.note {
+    font-style: italic;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 19px;
+    margin-top: 70px;
+    min-height: 10vh;
+    background-color: rgb(220, 220, 220, 0.5);
+}

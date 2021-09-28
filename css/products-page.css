@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 220, 220, 0.5);
+    height: 10vh;
+}
+
+.navbar .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.navbar .nav-links li {
+    list-style-type: none;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    font-family: 'Crimson Text', serif;
+    color: dimgrey;
+    font-size: 17px;
+}
+
+.navbar .nav-links a:hover {
+    font-weight: bold;
+}
+
+.navbar .nav-links .shopname {
+    font-family: 'Playfair Display', serif;
+    border-bottom: 1px solid black;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    /*margin-left: -20px;*/
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto 330px 500px auto;
+    grid-template-areas: 
+    ". aglaonema-image aglaonema-details ."
+    ". calathea-image calathea-details ."
+    ". ficus-image ficus-details ."
+    ". monstera-image monstera-details ."
+    ". pink-image pink-details ."
+    ". watercolor-image watercolor-details ."
+    ". white-image white-details ."
+    ". petite-image petite-details ."
+    ". note note .";
+    margin-top: 70px;
+}
+
+/* AGLAONEMA PLANT CODE */
+.grid-aglaonema-image {
+    grid-area: aglaonema-image;
+}
+
+.grid-aglaonema-details {
+    grid-area: aglaonema-details;
+}
+
+.grid-aglaonema-details h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.grid-aglaonema-details h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.grid-aglaonema-details h5 {
+    font-weight: 300;
+    color: dimgrey;
+    font-style: italic;
+}
+
+.grid-aglaonema-details p {
+    font-family: 'Crimson Text', serif;
+    line-height: 25px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.grid-aglaonema-details ul {
+    margin-top: 10px;
+}
+
+.grid-aglaonema-details li {
+    margin-left: 20px;
+    line-height: 25px;
+}
+
+.grid-aglaonema-details button {
+    padding: 8px 30px;
+    font-family: 'Crimson Text', serif;
+    font-size: 19px;
+    background-color: forestgreen;
+    border: none;
+    color: white;
+    margin-top: 15px;
+}
+
+.grid-aglaonema-details button:hover {
+    background-color: darkgreen;
+}
+
+/* CALATHEA PLANT CODE*/
+.grid-calathea-image {
+    grid-area: calathea-image;
+    margin-top: 70px;
+}
+
+.grid-calathea-details {
+    grid-area: calathea-details;
+    margin-top: 70px;
+}
+
+.grid-calathea-details h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.grid-calathea-details h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.grid-calathea-details h5 {
+    font-weight: 300;
+    color: dimgrey;
+    font-style: italic;
+}
+
+.grid-calathea-details p {
+    font-family: 'Crimson Text', serif;
+    line-height: 25px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.grid-calathea-details ul {
+    margin-top: 10px;
+}
+
+.grid-calathea-details li {
+    margin-left: 20px;
+    line-height: 25px;
+}
+
+.grid-calathea-details button {
+    padding: 8px 30px;
+    font-family: 'Crimson Text', serif;
+    font-size: 19px;
+    background-color: forestgreen;
+    border: none;
+    color: white;
+    margin-top: 15px;
+}
+
+.grid-calathea-details button:hover {
+    background-color: darkgreen;
+}
+
+/* FICUS PLANT CODE */
+.grid-ficus-image {
+    grid-area: ficus-image;
+    margin-top: 70px;
+}
+
+.grid-ficus-details {
+    grid-area: ficus-details;
+    margin-top: 70px;
+}
+
+.grid-ficus-details h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.grid-ficus-details h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.grid-ficus-details h5 {
+    font-weight: 300;
+    color: dimgrey;
+    font-style: italic;
+}
+
+.grid-ficus-details p {
+    font-family: 'Crimson Text', serif;
+    line-height: 25px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.grid-ficus-details ul {
+    margin-top: 10px;
+}
+
+.grid-ficus-details li {
+    margin-left: 20px;
+    line-height: 25px;
+}
+
+.grid-ficus-details button {
+    padding: 8px 30px;
+    font-family: 'Crimson Text', serif;
+    font-size: 19px;
+    background-color: forestgreen;
+    border: none;
+    color: white;
+    margin-top: 15px;
+}
+
+.grid-ficus-details button:hover {
+    background-color: darkgreen;
+}
+
+/* MONSTERA PLANT CODE */
+.grid-monstera-image {
+    grid-area: monstera-image;
+    margin-top: 70px;
+}
+
+.grid-monstera-details {
+    grid-area: monstera-details;
+    margin-top: 70px;
+}
+
+.grid-monstera-details h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.grid-monstera-details h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.grid-monstera-details h5 {
+    font-weight: 300;
+    color: dimgrey;
+    font-style: italic;
+}
+
+.grid-monstera-details p {
+    font-family: 'Crimson Text', serif;
+    line-height: 25px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.grid-monstera-details ul {
+    margin-top: 10px;
+}
+
+.grid-monstera-details li {
+    margin-left: 20px;
+    line-height: 25px;
+}
+
+.grid-monstera-details button {
+    padding: 8px 30px;
+    font-family: 'Crimson Text', serif;
+    font-size: 19px;
+    background-color: forestgreen;
+    border: none;
+    color: white;
+    margin-top: 15px;
+}
+
+.grid-monstera-details button:hover {
+    background-color: darkgreen;
+}
+
+/* PINK ANTHURIUM FLOWER CODE */
+.grid-pink-image {
+    grid-area: pink-image;
+    margin-top: 70px;
+}
+
+.grid-pink-details {
+    grid-area: pink-details;
+    margin-top: 70px;
+}
+
+.grid-pink-details h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.grid-pink-details h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.grid-pink-details h5 {
+    font-weight: 300;
+    color: dimgrey;
+    font-style: italic;
+}
+
+.grid-pink-details p {
+    font-family: 'Crimson Text', serif;
+    line-height: 25px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.grid-pink-details ul {
+    margin-top: 10px;
+}
+
+.grid-pink-details li {
+    margin-left: 20px;
+    line-height: 25px;
+}
+
+.grid-pink-details button {
+    padding: 8px 30px;
+    font-family: 'Crimson Text', serif;
+    font-size: 19px;
+    background-color: forestgreen;
+    border: none;
+    color: white;
+    margin-top: 15px;
+}
+
+.grid-pink-details button:hover {
+    background-color: darkgreen;
+}
+
+/* WATERCOLOR PURPLE FLOWER CODE */
+.grid-watercolor-image {
+    grid-area: watercolor-image;
+    margin-top: 70px;
+}
+
+.grid-watercolor-details {
+    grid-area: watercolor-details;
+    margin-top: 70px;
+}
+
+.grid-watercolor-details h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.grid-watercolor-details h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.grid-watercolor-details h5 {
+    font-weight: 300;
+    color: dimgrey;
+    font-style: italic;
+}
+
+.grid-watercolor-details p {
+    font-family: 'Crimson Text', serif;
+    line-height: 25px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.grid-watercolor-details ul {
+    margin-top: 10px;
+}
+
+.grid-watercolor-details li {
+    margin-left: 20px;
+    line-height: 25px;
+}
+
+.grid-watercolor-details button {
+    padding: 8px 30px;
+    font-family: 'Crimson Text', serif;
+    font-size: 19px;
+    background-color: forestgreen;
+    border: none;
+    color: white;
+    margin-top: 15px;
+}
+
+.grid-watercolor-details button:hover {
+    background-color: darkgreen;
+}
+
+/* WHITE ORCHID FLOWER CODE */
+.grid-white-image {
+    grid-area: white-image;
+    margin-top: 70px;
+}
+
+.grid-white-details {
+    grid-area: white-details;
+    margin-top: 70px;
+}
+
+.grid-white-details h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.grid-white-details h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.grid-white-details h5 {
+    font-weight: 300;
+    color: dimgrey;
+    font-style: italic;
+}
+
+.grid-white-details p {
+    font-family: 'Crimson Text', serif;
+    line-height: 25px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.grid-white-details ul {
+    margin-top: 10px;
+}
+
+.grid-white-details li {
+    margin-left: 20px;
+    line-height: 25px;
+}
+
+.grid-white-details button {
+    padding: 8px 30px;
+    font-family: 'Crimson Text', serif;
+    font-size: 19px;
+    background-color: forestgreen;
+    border: none;
+    color: white;
+    margin-top: 15px;
+}
+
+.grid-white-details button:hover {
+    background-color: darkgreen;
+}
+
+/* PETITE WHITE ORCHID FLOWER CODE */
+.grid-petite-image {
+    grid-area: petite-image;
+    margin-top: 70px;
+}
+
+.grid-petite-details {
+    grid-area: petite-details;
+    margin-top: 70px;
+}
+
+.grid-petite-details h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.grid-petite-details h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.grid-petite-details h5 {
+    font-weight: 300;
+    color: dimgrey;
+    font-style: italic;
+}
+
+.grid-petite-details p {
+    font-family: 'Crimson Text', serif;
+    line-height: 25px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.grid-petite-details ul {
+    margin-top: 10px;
+}
+
+.grid-petite-details li {
+    margin-left: 20px;
+    line-height: 25px;
+}
+
+.grid-petite-details button {
+    padding: 8px 30px;
+    font-family: 'Crimson Text', serif;
+    font-size: 19px;
+    background-color: forestgreen;
+    border: none;
+    color: white;
+    margin-top: 15px;
+}
+
+.grid-petite-details button:hover {
+    background-color: darkgreen;
+}
+
+.note {
+    grid-area: note;
+    margin-top: 70px;
+}
+
+.note {
+    font-style: italic;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 19px;
+    margin-top: 70px;
+    min-height: 10vh;
+    background-color: rgb(220, 220, 220, 0.5);
+}
+
